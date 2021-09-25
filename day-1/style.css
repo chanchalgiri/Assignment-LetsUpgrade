@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    height: auto;
+    width: 100%;
+    display: flex;/*(to align horizontally)*/
+}
+p{
+    height: 200px;
+    width: 20%;
+    font-size: 24px;
+    display: flex;/*(to align the text)*/
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    background-color: red;
+}
+.two{
+    background-color: green;
+}
+.three{
+    background-color: blueviolet;
+}
+.four{
+    background-color: brown;
+}
+.five{
+    background-color: darkgoldenrod;
+}
+
+@media (max-width:480px){
+    .head{
+        flex-direction: column;
+    }
+    p{
+        width: 100%;
+        font-size: 33px;
+    }
+}
