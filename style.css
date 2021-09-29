@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    background-color: #e77d01;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.item{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    margin-left: 20px;
+    line-height: 60px;
+    text-shadow: 1px 1px 1px #fec637;
+}
+/* navigation */
+.nav-bar{
+    width: 75%;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+li.nav{
+    margin: 0 8px;
+    line-height: 60px;
+}
+.nav a{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav a:hover{
+    border-bottom: 2px solid black;
+    text-shadow: 1px 1px 1px #fec637;
+}
+
+/* header */
+/* reposnsive-tab */
+@media (max-width:768px){
+    .item{
+        width: 100%;
+    }
+    .title{
+    font-size: 20px;
+    }
+    .nav a{
+        font-size: 14px;
+    }
+}
+
+/* rsponsive-phone */
+@media (max-width:480px){
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar{
+        background-color:rgba(192, 128, 54, 0.2);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* banner */
+.banner{
+    background-image: url("./images/pexels-eberhard-grossgasteiger-640809.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -250px;
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.text{
+    background-color: rgba(136, 119, 64, 0.271);
+    height: 250px;
+    width: 35%;
+    margin: 10%;
+    
+}
+.quote{
+    /* background-color: lawngreen; */
+    padding: 44px 20px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.btn{
+    padding: 5px 25px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e77d01;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.btn:hover{
+    box-shadow:-2px 2px 1px black;
+    border-radius: 3px;
+    transition: .3s;
+
+}
+/* places /images*/
+.places{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(rgba(207, 129, 11, 0.7),rgba(211, 208, 11, 0.363));
+}
+.place-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+    font-size: 25px;
+    margin-top: 30px;
+}
+.visit{
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #fec637;
+    margin-bottom: -20px;
+}
+.images{
+    margin: 50px 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.image-place{
+    background-color: rgb(138, 18, 18);
+    width: 28%;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    margin: 40px 0;
+    background-repeat: no-repeat;
+}
+.first{
+    background-image: url("./images/pexels-marta-wave-5876672.jpg");
+}
+.second{
+    background-image: url("./images/pexels-satoshi-hirayama-3285472.jpg");
+}
+.third{
+    background-image: url("./images/pexels-pixabay-460659.jpg");
+    background-position-y: -100px;
+    background-position-x: -300px;
+}
+.fourth{
+    background-image: url("./images//pexels-김-대정-6435268.jpg");
+}
+.fifth{
+    background-image: url("./images/vermont.jpg");
+}
+.last{
+    background-image: url("./images/pexels-alesia-kozik-6019903.jpg");
+    background-position-y: -250px;
+}
+.disc{
+    background-color: rgba(168, 87, 20, 0.768);
+    height: 100px;
+    width: 100%;
+    overflow-y: hidden;
+    transition: .3s;
+
+}
+.disc:hover{
+    height: 400px;
+}
+.padding{
+    padding: 20px;
+}
+.name{
+    font-size: 24px;
+    color: white
+}
+.btn2{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e77d01;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin:5px 0;
+}
+
+/* responsive */
+@media (max-width:768px){
+    /* .main{
+        width: 100%;
+    }  */
+    .banner{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start  ;
+    height: 70vh;
+    background-position-y: 0;
+    }
+    .text{
+        margin-top: 130px;
+        width: 80%;
+        height: auto;   
+    }
+    .quote{
+        padding: 30px 20px;
+        font-size: 15px;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .btn{
+        padding: 5px 15px;
+        margin:0 50% 30px 50%;
+    }
+    .images{
+        height: 100%;
+    }
+    .places{
+        height: 100%;
+    }
+    .image-place{
+        width: 45%;
+    }
+}
+
+/* responsive-phone */
+@media (max-width:480px){
+    .main{
+        width: 100%;
+    }
+    .image-place{
+        width: 85%;
+        height: 350px;
+    }
+
+}
