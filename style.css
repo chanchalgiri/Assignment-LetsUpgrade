@@ -251,5 +251,19 @@ li.nav{
         width: 85%;
         height: 350px;
     }
+    .disc{
+        height: 95px;
+        width: 100%;
+        overflow-y: hidden;
+        transition: .3s;
+    
+    }
+    .disc:hover{
+        height: 350px;
+    }
+    .disc-text{
+        font-size: 17px;
+        margin: 5px;
+    }    
 
 }
