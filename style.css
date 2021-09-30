@@ -246,6 +246,7 @@ li.nav{
 @media (max-width:480px){
     .main{
         width: 100%;
+        overflow-x: hidden;
     }
     .image-place{
         width: 85%;
